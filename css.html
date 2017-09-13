@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+body {
+    font: 14px/1.5 Helvetica,Arial,Sans-serif;
+    color: #666;
+    text-shadow: 1px 1px #fff;
+    background: url(http://cepat.us/wp-content/themes/cepatus/images/smooth_wall.png);
+}
+div.content{
+	 	display:  inline-block;
+        width:85%;
+        height:auto;
+        background-color:rgba(238, 238, 238, 0.3);
+        border:1px solid  rgb(211,211,211);
+        border-spacing:5px;/*cellspacing:poor IE support for  this*/
+        box-shadow: 0px 0px 9px #888888;
+         margin: 50px 50px;
+}
+div.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+div.header {
+    height: 20px;
+    padding: 10px 20px;
+    margin: 5px 2px 20px;
+    float:left;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    font-family: 15px "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    font-weight:900;
+}
+div.header-button {
+	height: 20px;
+    padding: 10px 20px;
+    margin: 5px 2px 20px;
+    border-radius: 10px 10px 0 0;
+    font-family: 15px "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    float:right;
+    font-weight:900;
+}
+div.btn-menu {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #4479BA;
+    padding: 2px 10px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+   display: inline-block;
+    font-size:11px;
+}
+div.btn-lgn {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: #fe531b;
+    padding: 2px 10px;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    color: white;
+   display: inline-block;
+    font-size:11px;
+}
+div.the_box {
+	clear:both;
+    width: 83%;
+    min-height: auto;
+    position: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 4px;
+    border-bottom-right-radius: 60px 5px;
+    text-shadow: rgb(255, 255, 255) 1px 1px;
+    color: rgb(102, 102, 102);
+    margin: 30px;
+    padding: 0px 20px 1px;
+    background: -webkit-gradient(linear, 100% 100%, 50% 10%, from(rgb(255, 255, 255)), color-stop(0.1, rgb(255, 255, 255)), to(rgb(243, 243, 243)));
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+}
+div.the_box_sub {
+	clear:both;
+    width: 200;
+    height:400px;
+    position: left;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 4px;
+    border-bottom-right-radius: 60px 5px;
+    text-shadow: rgb(255, 255, 255) 1px 1px;
+    color: rgb(102, 102, 102);
+    margin: 15px;
+    padding: 0px 20px 1px;
+    background: -webkit-gradient(linear, 100% 100%, 50% 10%, from(rgb(255, 255, 255)), color-stop(0.1, rgb(255, 255, 255)), to(rgb(243, 243, 243)));
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+}
+div.the_box_ribbon {
+    position: relative;
+    top: -190px;
+	left:-5;
+    width: 130px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px;
+    transform: rotate(-30deg) skew(0deg, 0deg) translate(-60px, -20px);
+    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), color-stop(0.1, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+    border-left: 1px dashed rgba(0, 0, 0, 0.1);
+    border-right: 1px dashed rgba(0, 0, 0, 0.1);
+     font-size: 0.5;
+     text-align:center;
+   
+}
+.the_box p {
+    padding: 30px 20px 0px 30px;
+    font-weight: bolder;
+}
+div.sub_box {
+	column-count: 3;
+    margin:0;
+ 
+}
+div.sub_box:nth-child(1){
+	height:800;
+}
+div.sub_box:nth-child(2){
+	height:800;
+}
+div.sub_box:nth-child(3){
+	height:800;
+}
+div.the_box_ribbon1 {
+      position: relative;
+    top: 150px;
+	left:-5px;
+    width: 230px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px;
+    transform: rotate(-30deg) skew(0deg, 0deg) translate(-60px, -20px);
+    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), color-stop(0.1, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+    border-left: 1px dashed rgba(0, 0, 0, 0.1);
+    border-right: 1px dashed rgba(0, 0, 0, 0.1);
+     font-size: 0.5;
+     text-align:center;
+   
+}
+div.the_box_ribbon2 {
+      position: relative;
+    top: 80px;
+	left:400px;
+    width: 230px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px;
+    transform: rotate(-30deg) skew(0deg, 0deg) translate(-60px, -20px);
+    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), color-stop(0.1, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+    border-left: 1px dashed rgba(0, 0, 0, 0.1);
+    border-right: 1px dashed rgba(0, 0, 0, 0.1);
+     font-size: 0.5;
+     text-align:center;
+   
+}
+div.the_box_ribbon3 {
+      position: relative;
+    top: 20px;
+	left:750px;
+    width: 230px;
+    height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px;
+    transform: rotate(-30deg) skew(0deg, 0deg) translate(-60px, -20px);
+    background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), color-stop(0.1, rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0)));
+    border-left: 1px dashed rgba(0, 0, 0, 0.1);
+    border-right: 1px dashed rgba(0, 0, 0, 0.1);
+     font-size: 0.5;
+     text-align:center;
+   
+}
+
+.navigation {
+    position: relative;
+    float: right;
+    height: 70px;
+}
+ul.menu {
+    list-style: none;
+    font-family: "Verdana",sans-serif;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+ul.menu li{
+both:clear;
+display:inline;
+}
+ul.menu li a {
+    text-decoration: none;
+    padding: 10px 0px;
+    width: 128px;
+    color: #333333;
+    float: left;
+    text-shadow: 0 1px 1px #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    box-shadow: 0 1px 3px #555;
+    background: rgba(224, 224, 224, 0.5);
+}
+ul.menu li a.current {
+    padding-top:10px;
+    border-radius: 0px 0px 10px 10px;
+}
+ul.menu li a.first {
+    border-radius: 0px 0px 0px 10px;
+    border-left: none;
+}
+div.head{
+	    margin-top: -17px;
+}
+ul.menu li span {
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    cursor: pointer;
+}
+
+
+.shake {
+	display:inline-block
+}
+.shake {
+	display:inline-block;
+	position:relative;
+}
+h2.shake,
+.shake.inline {
+	display:inline-block
+}
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake:hover,
+.shake:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+</style>
+
+
+</head>
+<body>
+<div class="head">
+
+<a href="http://cepat.us/" rel="home"><img id="logo" style="margin-left: 20px; opacity: 1;" src="http://cepat.us/wp-content/themes/cepatus/images/logo.png" height="150" width="350" title="Cepat.us | Download Cepat Tanpa Batas" class="shake"></a>
+
+<div class="navigation">	<ul class="menu" id="menu"><li>
+			<a href="/" class=""><img src="http://cepat.us/wp-content/themes/cepatus/icons/home.png" width=64 height=64/></a>
+			  </li><li>
+				<a href="/blog/" class="">BLOG<span style="background-image: url('http://cepat.us/wp-content/themes/cepatus/icons/article.png'); left: 163px; top: -17px; z-index: -1;"></span></a>
+			  </li><li>
+				<a href="/cbox/" class="">CBOX<span style="background-image: url('http://cepat.us/wp-content/themes/cepatus/icons/cbox.png'); left: 293px; top: -17px; z-index: -1;"></span></a>
+			  </li><li>
+				<a href="/faq/" class="">FAQ<span style="background-image: url('http://cepat.us/wp-content/themes/cepatus/icons/faq.png'); left: 423px; top: -17px; z-index: -1;"></span></a>
+			  </li><li>
+				<a href="/pricing/" class="">VIP<span style="background-image: url('http://cepat.us/wp-content/themes/cepatus/icons/donate.png'); left: 553px; top: -17px; z-index: -1;"></span></a>
+			  </li><li>
+				<a href="/contact/" class="last">CONTACT<span style="background-image: url('http://cepat.us/wp-content/themes/cepatus/icons/contact.png'); left: 683px; top: -17px; z-index: -1;"></span></a>
+			  </li>	</ul></div>
+
+</div>
+
+
+
+
+
+
+
+<div class="wrapper">
+<div class="content">
+<div class="header">
+Home
+</div>
+<div class="header-button">
+<div class="btn-menu">
+Hello, you're not logged in
+</div>
+<div class="btn-lgn">
+Login Here
+</div>
+<div class=btn-menu>
+Register
+</div>
+</div>
+<br />
+<br />
+<br />
+
+<div class=the_box>
+<p>
+<span style="color: red; font-size: large; font-weight: bolder;">Cepat.</span>
+<span style="color: black; font-size: large; font-weight: bolder;">Us</span>
+
+is the first and the best Cbox Leeching that allows you to download files instantly and at the best of your Internet speed.</p><p>
+First time using our site ? Check out our tutorial here
+</p>
+<div class="the_box_ribbon" style="width:30%">
+<h1 id="box_title">Welcome</h1>
+</div>
+</div>
+
+<div class="the_box_ribbon1">
+<h1 id="box_title">Latest News</h1>
+</div>
+
+<div class="the_box_ribbon2">
+<h1 id="box_title">Highlight File</h1>
+</div>
+
+<div class="the_box_ribbon3">
+<h1 id="box_title">Cepat.us ?</h1>
+</div>
+
+<div class=sub_box style="clear:both;">
+<div class=the_box_sub>
+
+<h4>Headline News</h4>
+<ul>
+<li>Open Reseller</li>
+<li>[NEW] Pembayaran via pulsa</li>
+<li>Get your VIP back!</li>
+<li>Fitur "Ngeblog" Fully La</li>
+<li>More News...</li>
+</ul>
+<h4>Recent from Blog</h4>
+<ul>
+<li>Open Reseller</li>
+<li>[NEW] Pembayaran via pulsa</li>
+<li>Get your VIP back!</li>
+<li>Game-Debate.com | Tempat n</li>
+<li>Cara memblok server warnet, ag</li>
+<li>More News...</li>
+</ul>
+
+
+</div>
+
+<div class=the_box_sub>
+aaaaa
+</div>
+
+<div class=the_box_sub>
+
+<center><span style="color: #8f8e8b; font-size: large; font-weight: bolder;">
+WHY DID YOU HAVE
+TO USE </span><span style="color: red; font-size: x-large; font-weight: bolder;">Cepat.</span><span style="color: black; font-size: x-large; font-weight: bolder;">Us</span></center>
+
+<span style="font-weight: bold;">Cepat.Us is the best site leeching to help you in the simplicity of downloading with many bandwidth servers and premium account. Don’t wait, join our community and participate in the experience of unlimited downloading.</span>
+
+</div>
+
+</div>
+<footer>
+<center>Coded, Developed & Designed by <a href="http://facebook.com/farizemoku">farizemoku</a></center>
+<center><nav>Copyright © by 
+
+<a href="http://cepat.us/">Cepat.us</a> | 
+<a href="http://cepat.us/index.php">Cepat.us v3.3</a>
+. All rights reserved.</nav></center>
+</footer>
+</div>
+</div>
+</body>
+</html>
